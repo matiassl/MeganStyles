@@ -103,6 +103,7 @@ main .hero {
 
 .index .servicios {
     grid-area: servicios;
+    min-height:500px;
 }
 
 .index .servicios .contenedor-servicios {
@@ -122,6 +123,14 @@ main .hero {
     height: 250px;
     width: 250px;
     border-radius: 125px;
+    transition: all 0.4s;
+}
+
+.index .servicios .contenedor-servicios .servicio .imagen-circulo:hover {
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
+    border: 2px solid #B11717;
 }
 
 .index .servicios .contenedor-servicios .titulo-de-servicio {
@@ -176,7 +185,12 @@ main .hero {
     width: 100%;
     height: auto;
     border-radius: 5px;
+    transition: all 0.4s;
+}
 
+.index .novedades .promos .card img:hover{
+   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+   transform: scale(1.1);
 }
 
 /*Pagina de Servicios */
@@ -245,8 +259,14 @@ main .hero {
     width: 100%;
     height: auto;
     border-radius: 5px;
-
+    transition: all 0.4s;
 }
+
+.page-servicios .servicios .contenedor-servicios .servicio .fotos img:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+   transform: scale(1.1);
+}
+
 
 .page-servicios .servicios .contenedor-servicios .servicio .fotos img:nth-child(1) {
     grid-area: foto1;
@@ -314,6 +334,7 @@ main .hero {
     background-color: #ffffff;
     margin-top: 25px;
     border-radius: 5px;
+    transition: all 0.4s;
 }
 
 .page-productos .productos .contenedor-productos .producto:nth-child(1) {
@@ -407,7 +428,9 @@ main .hero {
     padding-bottom: 150px;
     margin-top: 5px;
     text-align: center;
+    
 }
+
 
 .page-nosotros .nosotros .staff .personas .persona:nth-child(1) {
     grid-area: persona1;
@@ -436,8 +459,12 @@ main .hero {
 .page-nosotros .nosotros .staff .personas .persona img {
     border-radius: 100px;
     margin-bottom: 15px;
+    transition: all 0.4s;
 }
-
+.page-nosotros .nosotros .staff .personas .persona img:hover {
+box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+   transform: scale(1.1);
+}
 /*Pagina de Contacto */
 
 .page-contacto {
@@ -502,6 +529,15 @@ textarea {
     margin-bottom: 15px;
     width: 100%;
     height: 30px;
+    border: 3px solid #ccc;
+}
+
+.page-contacto .contactos .info .contacto .formulario input:focus {
+    border: 3px solid red;
+}
+
+.page-contacto .contactos .info .contacto .formulario textarea:focus {
+    border: 3px solid red;
 }
 
 .page-contacto .contactos .info .contacto .formulario textarea {
