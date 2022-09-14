@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
@@ -16,6 +19,36 @@
 
 <body class="index">
     <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/servicios.html">SERVICIOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/productos.html">PRODUCTOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/nosotros.html">NOSOTROS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <!-- <header>
         <img src="./img/logofinal.png" alt="logo de sitio" class="logo-menu">
         <nav class="menu">
             <ul>
@@ -26,16 +59,72 @@
                 <li><a href="./pages/contacto.html">CONTACTO</a></li>
             </ul>
         </nav>
-    </header>
+    </header> -->
+
+    <!-- <main>
+        <img src="./img/salon.jpg" alt="imagen informativa" class="hero">
+    </main> -->
 
     <main>
-        <img src="./img/salon.jpg" alt="imagen informativa" class="hero">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://picsum.photos/1920/600" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://picsum.photos/1920/600" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://picsum.photos/1920/600" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </main>
 
-    <section class="servicios">
-        <h2>Servicios</h2>
-        <!-- Cada una de ellas reedirecciona a la seccion correspondiente dentro de la pagina de servicios -->
+    <section class="container text-center">
+        <div class="titulo my-5">
+            <h2>Servicios</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <a href="./pages/servicios.html#peluqueria">
+                    <img src="./img/peluqueria.jpg" alt="peluqueria" class="img-fluid rounded-circle imagen-circulo">
+                    <h3 class="titulo-de-servicio">Peluquería</h3>
+                </a>
+            </div>
 
+            <div class="col-md-4">
+                <a href="./pages/servicios.html#manicure">
+                    <img src="./img/manicure.jpg" alt="Belleza de manos" class="img-fluid rounded-circle imagen-circulo">
+                    <h3 class="titulo-de-servicio">Belleza de manos</h3>
+                </a>
+            </div>
+
+            <div class="col-md-4">
+                <a href="./pages/servicios.html#depilacion">
+                    <img src="./img/depilacion.jpg" alt="depilacion" class="img-fluid rounded-circle imagen-circulo">
+                    <h3 class="titulo-de-servicio">Depilación</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <section class="servicios">
+        <h2>Servicios</h2>
         <div class="contenedor-servicios">
             <article class="servicio">
                 <a href="./pages/servicios.html#peluqueria">
@@ -58,46 +147,69 @@
                 </a>
             </article>
         </div>
-    </section>
+    </section> -->
 
-    <section class="novedades">
-        <div class="titulo">
+    <section class="container text-center mt-5 px-3">
+        <div class="titulo mb-5">
             <h2>Promos</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis dolorem suscipit quidem autem quam
                 pariatur, iusto ducimus consequatur non inventore, cum ad labore excepturi fugiat, ipsam necessitatibus.
                 Sapiente vitae, dolor libero sint blanditiis eligendi ipsa amet, tempore ab, id velit.</p>
         </div>
-        <div class="promos">
-            <article class="card">
-                <img src="https://picsum.photos/350/200" alt="promo1">
+        <div class="row">
+            <article class="col-md-4 my-2">
+                <img src="https://picsum.photos/350/200" alt="promo1" class="img-fluid rounded">
             </article>
-
-            <article class="card">
-                <img src="https://picsum.photos/350/200" alt="promo2">
+            <article class="col-md-4 my-2">
+                <img src="https://picsum.photos/350/200" alt="promo2" class="img-fluid rounded">
             </article>
-
-            <article class="card">
-                <img src="https://picsum.photos/350/200" alt="promo3">
+            <article class="col-md-4 my-2">
+                <img src="https://picsum.photos/350/200" alt="promo3" class="img-fluid rounded">
             </article>
         </div>
     </section>
 
-    <footer>
-        <div class="datos">
+    <!-- <section class="novedades">
+        <div class="titulo">
+            
+        </div>
+        <div class="promos">
+            <article class="card">
+                
+            </article>
+
+            <article class="card">
+                
+            </article>
+
+            <article class="card">
+                
+            </article>
+        </div>
+    </section> -->
+
+    <footer class="container-fluid mt-5">
+        <div class="datos text-center">
             <!-- Esperando que me pasen el logo oficial no quiero poner la tijera xq queda muy feo abajo -->
             <img src="./img/logofinal.png" alt="logo footer" class="logo-footer">
+            <hr class="w-25 mx-auto">
             <p>Belgrano 1008 - San Luis - Argentina</p>
 
             <div class="social-bar">
                 <a href="" class="icono fab fa-facebook-f" target="_blank"></a>
                 <a href="" class="icono fa-brands fa-instagram" target="_blank"></a>
             </div>
+
+            <hr class="mt-5">
             <p>Desarrollado por: MSL - Copyright @2022</p>
         </div>
 
     </footer>
 
 
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 
 </html>
