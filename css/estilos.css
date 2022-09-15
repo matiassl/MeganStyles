@@ -1,3 +1,12 @@
+body {
+    font-family: "Dosis", sans-serif;
+    background-image: url('../img/onda.svg');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: 7%;
+    background-color: #ffFFFf;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -8,7 +17,61 @@ a:visited {
     color: black;
 }
 
+p{
+    font-size: 20px;
+}
+/* Menu */
 
+header {
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    height: 100px;
+    z-index: 4;
+}
+.navbar{
+    background-color: #ffffff !important;
+}
+.logo-menu {
+    height: 50px;
+    width: auto;
+    padding-left: 30px;
+}
+
+.navbar-collapse{
+    margin-top: 20px;
+}
+
+.navbar-collapse .navbar-nav .nav-item{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.navbar-collapse .navbar-nav .nav-item a{
+    font-weight: 500;
+}
+
+.navbar-collapse .navbar-nav .nav-item a:hover{
+    color: #B11717;    
+}
+
+/* Index */
+
+.servicios .titulo h2, .novedades .titulo h2{
+    font-size: 40px;
+}
+
+.servicios .imagen-circulo{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+}
+
+.formulario .btn-rojo{
+    background-color: #B11717 !important;
+    border: 0px;
+    color: #ffffff;
+}
 
 /* Footer */
 footer {
