@@ -17,9 +17,10 @@ a:visited {
     color: black;
 }
 
-p{
+p {
     font-size: 20px;
 }
+
 /* Menu */
 
 header {
@@ -29,45 +30,81 @@ header {
     height: 100px;
     z-index: 4;
 }
-.navbar{
+
+.navbar {
     background-color: #ffffff !important;
 }
+
 .logo-menu {
     height: 50px;
     width: auto;
     padding-left: 30px;
 }
 
-.navbar-collapse{
+.navbar-collapse {
     margin-top: 20px;
 }
 
-.navbar-collapse .navbar-nav .nav-item{
+.navbar-collapse .navbar-nav .nav-item {
     padding-left: 5px;
     padding-right: 5px;
 }
 
-.navbar-collapse .navbar-nav .nav-item a{
+.navbar-collapse .navbar-nav .nav-item a {
     font-weight: 500;
 }
 
-.navbar-collapse .navbar-nav .nav-item a:hover{
-    color: #B11717;    
+.navbar-collapse .navbar-nav .nav-item a:hover {
+    color: #B11717;
 }
+
+
+/* Hero */
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/salon.jpg);
+    padding: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    justify-content: center;
+    min-height: 200px;
+    color: white;
+    background-attachment: fixed;
+}
+
+.hero .titulo h1{
+    font-size: 50px;
+}
+
 
 /* Index */
 
-.servicios .titulo h2, .novedades .titulo h2{
+.servicios .titulo h2,
+.novedades .titulo h2 {
     font-size: 40px;
 }
 
-.servicios .imagen-circulo{
+.servicios .imagen-circulo {
     height: 200px;
     width: 200px;
     border-radius: 100px;
 }
 
-.formulario .btn-rojo{
+
+.section2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/salon.jpg);
+    padding: 0px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    justify-content: center;
+    min-height: 400px;
+    color: white;
+    
+}
+
+.formulario .btn-rojo {
     background-color: #B11717 !important;
     border: 0px;
     color: #ffffff;
@@ -88,7 +125,7 @@ footer p {
 
 .datos {
     padding-top: 50px;
-     padding-bottom: 5px;
+    padding-bottom: 5px;
     /* text-align:center; */
     /* display: flex;
     flex-direction: column;
@@ -121,4 +158,54 @@ footer p {
 
 .datos .social-bar .fa-instagram {
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+
+
+/* Servicios */
+
+.page-servicios .servicios .contenedor-servicios .servicio .texto h3{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.page-servicios .servicios .contenedor-servicios .servicio .fotos .foto img{
+    transition: all 0.4s;
+}
+
+
+.page-servicios .servicios .contenedor-servicios .servicio .fotos .foto img:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+
+/* Productos */
+
+
+.page-productos .productos .contenedor-productos .producto .card{
+    border: 0px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%)
+}
+
+.page-productos .productos .contenedor-productos .producto .card .card-body .card-text{
+    font-size: 18px;
+}
+
+.page-productos .productos .contenedor-productos .producto .card{
+    transition: all 0.4s;
+}
+
+.page-productos .productos .contenedor-productos .producto .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*Nosotros  */
+
+.page-nosotros .nosotros .staff .personas .persona img {
+    transition: all 0.4s;
+}
+
+.page-nosotros .nosotros .staff .personas .persona img:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+       transform: scale(1.1);
 }
