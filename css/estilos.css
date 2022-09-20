@@ -91,7 +91,7 @@ header {
 }
 
 
-.section2{
+.tendencias{
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/salon.jpg);
     padding: 0px;
     background-attachment: fixed;
@@ -99,16 +99,36 @@ header {
     background-size: cover;
     background-position: center center;
     justify-content: center;
-    min-height: 400px;
-    color: white;
-    
+    min-height: 350px;
+    color: white;    
 }
 
-.formulario .btn-rojo {
-    background-color: #B11717 !important;
+.tendencias .titulo h2{
+    font-size: 40px;
+}
+
+.tendencias .titulo .btn-rojo {
+    background-color: #B11717 ;
+    border: 0px;
+    color: #ffffff;
+    width: 100px;
+    height: 40px;
+}
+.tendencias .titulo .btn-rojo:hover{
+    background-color: #c43838 ;
     border: 0px;
     color: #ffffff;
 }
+
+.novedades .promos .promo img{
+    transition: all 0.4s;
+}
+
+.novedades .promos .promo img:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+
 
 /* Footer */
 footer {
@@ -208,4 +228,17 @@ footer p {
 .page-nosotros .nosotros .staff .personas .persona img:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
        transform: scale(1.1);
+}
+
+/* Formulario */
+
+.btn-rojo {
+    background-color: #B11717 !important;
+    border: 0px;
+    color: #ffffff;
+}
+.btn-rojo:hover{
+    background-color: #c43838 !important;
+    border: 0px;
+    color: #ffffff !important;
 }
