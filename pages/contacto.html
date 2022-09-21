@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
@@ -16,84 +19,128 @@
 
 <body class="page-contacto">
     <header>
-        <img src="../img/logofinal.png" alt="logo de sitio" class="logo-menu">
-        <nav class="menu">
-            <ul>
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="servicios.html">SERVICIOS</a></li>
-                <li><a href="productos.html">PRODUCTOS</a></li>
-                <li><a href="nosotros.html">NOSOTROS</a></li>
-                <li><a href="contacto.html">CONTACTO</a></li>
+        <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="../img/logofinal.png" alt="logo" class="logo-menu">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="servicios.html">SERVICIOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="productos.html">PRODUCTOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">CONTACTO</a>
+              </li>
             </ul>
-        </nav>
+          </div>
+        </div>
+      </nav>
     </header>
-
-    <section class="contactos">
-        <div class="titulo">
+    <div class="container-fluid hero d-flex">
+        <div class="titulo text-center my-auto">
             <h1>Contactanos</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, repellendus expedita nostrum nihil
                 aperiam quo!</p>
         </div>
+    </div>
+    <section class="container contactos my-5 px-3">
+        
 
-        <div class="info">
-            <article class="contacto">
-                <h3>Escribinos</h3>
-                <div class="formulario">
-                    <form action="">
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" placeholder="Ingrese su nombre">
-                        <br>
+        <div class="container info">
+            <div class="row mt-2">
+                <div class="col-sm-12">
+                    <article class="contacto">
+                        <h3>Escribinos</h3>
+                        <div class="formulario">
+                            <form action="">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="mb-3">
+                                                <label for="nombre" class="form-label"></label>
+                                                <input type="text" class="form-control" id="nombre"
+                                                    placeholder="Nombre">
+                                            </div>
 
-                        <label for="apellido">Apellido:</label>
-                        <input type="text" id="apellido" placeholder="Ingrese su apellido">
-                        <br>
+                                            <div class="mb-3">
+                                                <label for="apellido" class="form-label"></label>
+                                                <input type="text" class="form-control" id="apellido"
+                                                    placeholder="Apellido">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="mb-3">
+                                                <label for="telefono" class="form-label"></label>
+                                                <input type="number" class="form-control" id="telefono"
+                                                    placeholder="Teléfono">
+                                            </div>
 
-                        <label for="telefono">Telefono:</label>
-                        <input type="number" id="telefono" placeholder="Ingrese su telefono">
-                        <br>
+                                            <div class="mb-3">
+                                                <label for="email" class="form-label"></label>
+                                                <input type="email" class="form-control" id="email"
+                                                    placeholder="Correo electronico">
+                                            </div>
+                                        </div>
+                                    </div>
 
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" placeholder="ingrese su email">
-                        <br>
+                                </div>
+                                <div class="container">
+                                    <div class="mb-3">
+                                        <label for="mensaje" class="form-label">Mensaje</label>
+                                        <textarea class="form-control" id="mensaje" rows="3" placeholder="Escribí tu mensaje"></textarea>
+                                    </div>
+                                    <input type="submit" value="Enviar" class="btn btn-rojo w-100">
+                                </div>
 
-                        <label for="motivo">Motivo:</label> <br>
-                        <textarea name="motivo" id="motivo" cols="30" rows="10"></textarea>
-                        <br>
+                            </form>
+                        </div>
 
-                        <input type="submit" value="Enviar" class="boton">
-                    </form>
+                    </article>
                 </div>
-
-            </article>
-
-            <article class="contacto">
-                <h3>Visitanos</h3>
-                <div class="mapa">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13338.835317142879!2d-66.338341!3d-33.3002797!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x382dba5636d5fd39!2sMegan%20Estilos!5e0!3m2!1ses-419!2sar!4v1660279320110!5m2!1ses-419!2sar"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-
-            </article>
+            </div>
         </div>
 
     </section>
-
-    <footer>
-        <div class="datos">
-            <!-- Esperando que me pasen el logo oficial no quiero poner la tijera xq queda muy feo abajo -->
+    <section class="container-fluid">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13338.835317142879!2d-66.338341!3d-33.3002797!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x382dba5636d5fd39!2sMegan%20Estilos!5e0!3m2!1ses-419!2sar!4v1660279320110!5m2!1ses-419!2sar"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <footer class="container-fluid">
+        <div class="datos text-center">
             <img src="../img/logofinal.png" alt="logo footer" class="logo-footer">
+            <hr class="w-25 mx-auto">
             <p>Belgrano 1008 - San Luis - Argentina</p>
 
             <div class="social-bar">
                 <a href="" class="icono fab fa-facebook-f" target="_blank"></a>
                 <a href="" class="icono fa-brands fa-instagram" target="_blank"></a>
             </div>
+
+            <hr class="mt-5">
             <p>Desarrollado por: MSL - Copyright @2022</p>
         </div>
 
     </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

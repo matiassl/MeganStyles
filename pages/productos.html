@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
@@ -12,126 +16,162 @@
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Peluqueria</title>
 </head>
+
 <body class="page-productos">
     <header>
-        <img src="../img/logofinal.png" alt="logo de sitio" class="logo-menu">
-        <nav class="menu">
-            <ul>
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="servicios.html">SERVICIOS</a></li>
-                <li><a href="productos.html">PRODUCTOS</a></li>
-                <li><a href="nosotros.html">NOSOTROS</a></li>
-                <li><a href="contacto.html">CONTACTO</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../img/logofinal.png" alt="logo" class="logo-menu">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">SERVICIOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="productos.html">PRODUCTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <section class="productos">
-
-        <div class="titulo">
+    <div class="container-fluid hero d-flex">
+        <div class="titulo text-center my-auto">
             <h1>Productos</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nam officia, fugit veniam accusamus dolorem?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nam officia, fugit veniam accusamus
+                dolorem?</p>
         </div>
-        
+    </div>
 
-        <div class="contenedor-productos">
+    <section class="container productos mt-5 px-3">
+        <div class="row contenedor-productos g-4 mt-5">
             <!-- Imagenes provisorias hasta conseguir todo propio -->
-        <article class="producto">
+            <article class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 producto">
+                <div class="card">
+                    <img src="../img/productos/producto1.jpg" class="card-img-top" alt="imagen de tinturas">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Tinturas</h3>
+                        <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, aut laborum ducimus mollitia
+                            reprehenderit voluptatum! Doloribus deserunt eligendi soluta consectetur, laboriosam
+                            perferendis, beatae, tenetur voluptatem consequatur sint nesciunt voluptatum odio?
+                        </p>
+                    </div>
+                </div>
+            </article>
 
-            <img src="https://picsum.photos/350/200" alt="imagen de tinturas" >
+            <article class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 producto">
+                <div class="card">
+                    <img src="../img/productos/producto2.jpg" class="card-img-top" alt="imagen de tinturas">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Belleza de manos</h3>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, aut laborum ducimus mollitia
+                                reprehenderit voluptatum! Doloribus deserunt eligendi soluta consectetur, laboriosam
+                                perferendis, beatae, tenetur voluptatem consequatur sint nesciunt voluptatum odio?
+                            </p>
+                    </div>
+                </div>
+            </article>
 
-            <div class="info">
-                <h3>Silkey - Tinturas</h3>
-            <!-- <img src="../img/tinturas.jpg" alt="imagen de tinturas" height="100" width="auto"> -->
-            
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, aut laborum ducimus mollitia reprehenderit voluptatum! Doloribus deserunt eligendi soluta consectetur, laboriosam perferendis, beatae, tenetur voluptatem consequatur sint nesciunt voluptatum odio?</p>
-            </div>
-            
-        </article>
+            <article class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 producto">
+                <div class="card">
+                    <img src="../img/productos/producto3.jpg" class="card-img-top" alt="imagen de tinturas">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Cuidado capilar</h3>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, aut laborum ducimus mollitia
+                                reprehenderit voluptatum! Doloribus deserunt eligendi soluta consectetur, laboriosam
+                                perferendis, beatae, tenetur voluptatem consequatur sint nesciunt voluptatum odio?
+                            </p>
+                    </div>
+                </div>
+            </article>
 
-        <article class="producto">
+            <article class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 producto">
+                <div class="card">
+                    <img src="../img/productos/producto4.jpg" class="card-img-top" alt="imagen de tinturas">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Perfumes y fragancias</h3>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, aut laborum ducimus mollitia
+                                reprehenderit voluptatum! Doloribus deserunt eligendi soluta consectetur, laboriosam
+                                perferendis, beatae, tenetur voluptatem consequatur sint nesciunt voluptatum odio?
+                            </p>
+                    </div>
+                </div>
+            </article>
 
-            <img src="https://picsum.photos/350/200" alt="imagen de tinturas" >
+            <article class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 producto">
+                <div class="card">
+                    <img src="../img/productos/producto5.jpg" class="card-img-top" alt="imagen de tinturas">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Accesorios</h3>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, aut laborum ducimus mollitia
+                                reprehenderit voluptatum! Doloribus deserunt eligendi soluta consectetur, laboriosam
+                                perferendis, beatae, tenetur voluptatem consequatur sint nesciunt voluptatum odio?
+                            </p>
+                    </div>
+                </div>
+            </article>
 
-            <div class="info">
-                <h3>Silkey - Tinturas</h3>
-            <!-- <img src="../img/tinturas.jpg" alt="imagen de tinturas" height="100" width="auto"> -->
-            
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, aut laborum ducimus mollitia reprehenderit voluptatum! Doloribus deserunt eligendi soluta consectetur, laboriosam perferendis, beatae, tenetur voluptatem consequatur sint nesciunt voluptatum odio?</p>
-            </div>
-            
-        </article>
-
-        <article class="producto">
-
-            <img src="https://picsum.photos/350/200" alt="imagen de tinturas" >
-
-            <div class="info">
-                <h3>Silkey - Tinturas</h3>
-            <!-- <img src="../img/tinturas.jpg" alt="imagen de tinturas" height="100" width="auto"> -->
-            
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, aut laborum ducimus mollitia reprehenderit voluptatum! Doloribus deserunt eligendi soluta consectetur, laboriosam perferendis, beatae, tenetur voluptatem consequatur sint nesciunt voluptatum odio?</p>
-            </div>
-            
-        </article>
-        <article class="producto">
-
-            <img src="https://picsum.photos/350/200" alt="imagen de tinturas" >
-
-            <div class="info">
-                <h3>Silkey - Tinturas</h3>
-            <!-- <img src="../img/tinturas.jpg" alt="imagen de tinturas" height="100" width="auto"> -->
-            
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, aut laborum ducimus mollitia reprehenderit voluptatum! Doloribus deserunt eligendi soluta consectetur, laboriosam perferendis, beatae, tenetur voluptatem consequatur sint nesciunt voluptatum odio?</p>
-            </div>
-            
-        </article>
-
-        <article class="producto">
-
-            <img src="https://picsum.photos/350/200" alt="imagen de tinturas" >
-
-            <div class="info">
-                <h3>Silkey - Tinturas</h3>
-            <!-- <img src="../img/tinturas.jpg" alt="imagen de tinturas" height="100" width="auto"> -->
-            
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, aut laborum ducimus mollitia reprehenderit voluptatum! Doloribus deserunt eligendi soluta consectetur, laboriosam perferendis, beatae, tenetur voluptatem consequatur sint nesciunt voluptatum odio?</p>
-            </div>
-            
-        </article>
-
-        <article class="producto">
-
-            <img src="https://picsum.photos/350/200" alt="imagen de tinturas" >
-
-            <div class="info">
-                <h3>Silkey - Tinturas</h3>
-            <!-- <img src="../img/tinturas.jpg" alt="imagen de tinturas" height="100" width="auto"> -->
-            
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, aut laborum ducimus mollitia reprehenderit voluptatum! Doloribus deserunt eligendi soluta consectetur, laboriosam perferendis, beatae, tenetur voluptatem consequatur sint nesciunt voluptatum odio?</p>
-            </div>
-            
-        </article>
-        
+            <article class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 producto">
+                <div class="card">
+                    <img src="../img/productos/producto6.jpg" class="card-img-top" alt="imagen de tinturas">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Productos de belleza</h3>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, aut laborum ducimus mollitia
+                                reprehenderit voluptatum! Doloribus deserunt eligendi soluta consectetur, laboriosam
+                                perferendis, beatae, tenetur voluptatem consequatur sint nesciunt voluptatum odio?
+                            </p>
+                    </div>
+                </div>
+            </article>
         </div>
 
-        
+
     </section>
 
 
-    <footer>
-        <div class="datos">
-            <!-- Esperando que me pasen el logo oficial no quiero poner la tijera xq queda muy feo abajo -->
+    <footer class="container-fluid mt-5">
+        <div class="datos text-center">
             <img src="../img/logofinal.png" alt="logo footer" class="logo-footer">
-        <p>Belgrano 1008 - San Luis - Argentina</p> 
+            <hr class="w-25 mx-auto">
+            <p>Belgrano 1008 - San Luis - Argentina</p>
 
-        <div class="social-bar">
-            <a href="" class="icono fab fa-facebook-f" target="_blank"></a>
-            <a href="" class="icono fa-brands fa-instagram" target="_blank"></a>
-          </div>
-          <p>Desarrollado por: MSL - Copyright @2022</p>
+            <div class="social-bar">
+                <a href="" class="icono fab fa-facebook-f" target="_blank"></a>
+                <a href="" class="icono fa-brands fa-instagram" target="_blank"></a>
+            </div>
+
+            <hr class="mt-5">
+            <p>Desarrollado por: MSL - Copyright @2022</p>
         </div>
-        
+
     </footer>
+     <!-- JavaScript Bundle with Popper -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+     crossorigin="anonymous"></script>
 </body>
+
 </html>
