@@ -1,0 +1,32 @@
+/* Menu */
+
+header {
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    height: 100px;
+    z-index: 4;
+    .navbar {
+        background-color: #ffffff !important;
+    }
+}
+
+.logo-menu {
+    height: 50px;
+    width: auto;
+    padding-left: 30px;
+}
+
+.navbar-collapse {
+    margin-top: 20px;
+    .navbar-nav .nav-item {
+        padding-left: 5px;
+        padding-right: 5px;
+        a {
+            font-weight: 500;
+            &:hover{
+                color: $primario;
+            }
+        }
+    }
+}

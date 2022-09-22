@@ -1,0 +1,73 @@
+
+/* Index */
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/salon.jpg);
+    padding: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    justify-content: center;
+    min-height: 200px;
+    color: white;
+    background-attachment: fixed;
+    .titulo h1{
+        font-size: 50px;
+    }
+}
+
+.servicios .imagen-circulo {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    transition: all 0.4s;
+    &:hover{
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        transform: scale(1.1);
+    }
+}
+
+.tendencias{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/salon.jpg);
+    padding: 0px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    justify-content: center;
+    min-height: 350px;
+    color: white;
+    .titulo{
+        h2{
+            font-size: 40px;
+        }
+        .btn-rojo {
+            background-color: $primario ;
+            border: 0px;
+            color: #ffffff;
+            width: 100px;
+            height: 40px;
+            &:hover{
+                background-color: $secundario;
+                border: 0px;
+                color: #ffffff;
+            }
+        }
+    }    
+}
+
+// Novedades
+
+.novedades{
+    .promos{
+        .promo{
+            img{
+               transition: all 0.4s;
+               &:hover{
+                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+                transform: scale(1.1);
+               } 
+            }            
+        }
+    }
+}

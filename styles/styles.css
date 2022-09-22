@@ -1,0 +1,207 @@
+body {
+  font-family: "Dosis", sans-serif;
+  background-image: url("../img/onda.svg");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 7%;
+  background-color: #ffFFFf;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  font-size: 20px;
+}
+
+/* Menu */
+header {
+  background-color: #ffffff;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 100px;
+  z-index: 4;
+}
+header .navbar {
+  background-color: #ffffff !important;
+}
+
+.logo-menu {
+  height: 50px;
+  width: auto;
+  padding-left: 30px;
+}
+
+.navbar-collapse {
+  margin-top: 20px;
+}
+.navbar-collapse .navbar-nav .nav-item {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.navbar-collapse .navbar-nav .nav-item a {
+  font-weight: 500;
+}
+.navbar-collapse .navbar-nav .nav-item a:hover {
+  color: #B11717;
+}
+
+/* Footer */
+footer {
+  /* grid-area: footer; */
+  background: #1A1E25;
+  color: #868c96;
+}
+footer .datos {
+  padding-top: 50px;
+  padding-bottom: 5px;
+}
+footer .datos .logo-footer {
+  height: 75px;
+  width: auto;
+}
+footer .datos .social-bar {
+  display: inline;
+  font-size: 1.5rem;
+  height: 45px;
+}
+footer .datos .social-bar .fa-facebook-f {
+  background: #0D70E8;
+}
+footer .datos .social-bar .fa-instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+footer .datos .social-bar .icono {
+  color: white;
+  padding: 0.7rem;
+  border-radius: 10px;
+  margin: 0 5px;
+  width: 50px;
+}
+footer p {
+  /* padding: 40px 0; */
+  /* text-align: center; */
+  font-size: 18px;
+}
+
+/* Index */
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/salon.jpg);
+  padding: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  justify-content: center;
+  min-height: 200px;
+  color: white;
+  background-attachment: fixed;
+}
+.hero .titulo h1 {
+  font-size: 50px;
+}
+
+.servicios .imagen-circulo {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  transition: all 0.4s;
+}
+.servicios .imagen-circulo:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
+}
+
+.tendencias {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/salon.jpg);
+  padding: 0px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  justify-content: center;
+  min-height: 350px;
+  color: white;
+}
+.tendencias .titulo h2 {
+  font-size: 40px;
+}
+.tendencias .titulo .btn-rojo {
+  background-color: #B11717;
+  border: 0px;
+  color: #ffffff;
+  width: 100px;
+  height: 40px;
+}
+.tendencias .titulo .btn-rojo:hover {
+  background-color: #c43838;
+  border: 0px;
+  color: #ffffff;
+}
+
+.novedades .promos .promo img {
+  transition: all 0.4s;
+}
+.novedades .promos .promo img:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
+}
+
+/* Servicios */
+.page-servicios .servicios .contenedor-servicios .servicio .texto h3 {
+  font-size: 35px;
+  font-weight: 600;
+}
+.page-servicios .servicios .contenedor-servicios .servicio .fotos .foto img {
+  transition: all 0.4s;
+}
+.page-servicios .servicios .contenedor-servicios .servicio .fotos .foto img:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
+}
+
+/* Productos */
+.page-productos .productos .contenedor-productos .producto .card {
+  border: 0px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.4s;
+}
+.page-productos .productos .contenedor-productos .producto .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.page-productos .productos .contenedor-productos .producto .card .card-body .card-text {
+  font-size: 18px;
+}
+
+/*Nosotros */
+.page-nosotros .nosotros .staff .personas .persona img {
+  transition: all 0.4s;
+}
+.page-nosotros .nosotros .staff .personas .persona img:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
+}
+
+/* Formulario */
+.form-control:focus {
+  border-color: #B11717;
+  box-shadow: 0 0 0 0.25rem rgba(196, 56, 56, 0.25);
+}
+
+.btn-rojo {
+  background-color: #B11717;
+  border: 0px;
+  color: #ffffff;
+}
+.btn-rojo:hover {
+  background-color: #c43838 !important;
+  border: 0px;
+  color: #ffffff !important;
+}/*# sourceMappingURL=styles.css.map */

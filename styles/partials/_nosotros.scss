@@ -1,0 +1,35 @@
+/*Nosotros */
+
+.page-nosotros{
+    .nosotros{
+        .staff{
+            .personas{
+                .persona{
+                    img {
+                        transition: all 0.4s;
+                        &:hover{
+                            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Formulario */
+.form-control:focus{
+    border-color: $primario;
+    box-shadow: 0 0 0 0.25rem rgba(196, 56, 56, 0.25);
+}
+.btn-rojo {
+    background-color: $primario;
+    border: 0px;
+    color: #ffffff;
+    &:hover{
+        background-color: $secundario !important;
+        border: 0px;
+        color: #ffffff !important;
+    }
+}
