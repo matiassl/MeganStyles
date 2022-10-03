@@ -1,3 +1,8 @@
+.page-nosotros .nosotros .staff .personas .persona img:hover, .page-servicios .servicios .contenedor-servicios .servicio .fotos .foto img:hover, .novedades .promos .promo img:hover, .servicios .imagen-circulo:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
+}
+
 body {
   font-family: "Dosis", sans-serif;
   background-image: url("../img/onda.svg");
@@ -56,9 +61,9 @@ header .navbar {
 
 /* Footer */
 footer {
-  /* grid-area: footer; */
-  background: #1A1E25;
+  background-color: #1A1E25;
   color: #868c96;
+  font-size: 18px;
 }
 footer .datos {
   padding-top: 50px;
@@ -114,11 +119,6 @@ footer p {
   border-radius: 100px;
   transition: all 0.4s;
 }
-.servicios .imagen-circulo:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  transform: scale(1.1);
-}
-
 .tendencias {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/salon.jpg);
   padding: 0px;
@@ -149,11 +149,6 @@ footer p {
 .novedades .promos .promo img {
   transition: all 0.4s;
 }
-.novedades .promos .promo img:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  transform: scale(1.1);
-}
-
 /* Servicios */
 .page-servicios .servicios .contenedor-servicios .servicio .texto h3 {
   font-size: 35px;
@@ -162,11 +157,6 @@ footer p {
 .page-servicios .servicios .contenedor-servicios .servicio .fotos .foto img {
   transition: all 0.4s;
 }
-.page-servicios .servicios .contenedor-servicios .servicio .fotos .foto img:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  transform: scale(1.1);
-}
-
 /* Productos */
 .page-productos .productos .contenedor-productos .producto .card {
   border: 0px;
@@ -184,11 +174,6 @@ footer p {
 .page-nosotros .nosotros .staff .personas .persona img {
   transition: all 0.4s;
 }
-.page-nosotros .nosotros .staff .personas .persona img:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  transform: scale(1.1);
-}
-
 /* Formulario */
 .form-control:focus {
   border-color: #B11717;

@@ -1,0 +1,5 @@
+@mixin footerColores($fondo, $color, $letras: 18px) { 
+    background-color: $fondo;
+    color: $color;
+    font-size: $letras;
+}
