@@ -13,7 +13,7 @@
                 .fotos{
                     .foto{
                         img{
-                            transition: map-get($transiciones, $transicion1 );
+                            transition: all 0.4s;
                             &:hover{
                                 @extend %agrandarImagen;
                             }

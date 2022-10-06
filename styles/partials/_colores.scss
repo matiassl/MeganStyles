@@ -1,3 +1,9 @@
 $primario: #B11717;
 $secundario: #c43838;
 $gris: #858796;
+
+@mixin footerColores($fondo, $color, $letras: 18px) { 
+    background-color: $fondo;
+    color: $color;
+    font-size: $letras;
+}

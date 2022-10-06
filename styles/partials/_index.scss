@@ -20,7 +20,7 @@
     height: 200px;
     width: 200px;
     border-radius: 100px;
-    transition: map-get($transiciones, $transicion1 );
+    transition: all 0.4s;
     &:hover{
         @extend %agrandarImagen;
     }
@@ -61,7 +61,7 @@
     .promos{
         .promo{
             img{
-               transition: map-get($transiciones, $transicion1 );
+               transition: all 0.4s;
                &:hover{
                 @extend %agrandarImagen;
                } 

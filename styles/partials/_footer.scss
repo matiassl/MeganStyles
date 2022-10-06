@@ -1,7 +1,6 @@
+
 /* Footer */
 footer {
-    // background: #1A1E25;
-    // color: #868c96;
     @include footerColores(#1A1E25, #868c96);
     .datos {
         padding-top: 50px;
@@ -31,8 +30,6 @@ footer {
     }
     
     p {
-        /* padding: 40px 0; */
-        /* text-align: center; */
         font-size: 18px;
     }
 }
