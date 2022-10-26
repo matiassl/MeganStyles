@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700;800&display=swap");
 .page-nosotros .nosotros .staff .personas .persona img:hover, .page-servicios .servicios .contenedor-servicios .servicio .fotos .foto img:hover, .novedades .promos .promo img:hover, .servicios .imagen-circulo:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   transform: scale(1.1);
 }
 
 body {
-  font-family: "Dosis", sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-image: url("../img/onda.svg");
   background-position: center;
   background-repeat: repeat;
@@ -28,6 +30,10 @@ a:hover {
 
 p {
   font-size: 20px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Dosis", sans-serif;
 }
 
 /* Menu */
